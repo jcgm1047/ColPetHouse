@@ -1,3 +1,6 @@
+<?php 
+    include './controllers/usuario/UsuarioController.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="UsuarioController.php" method="post">
     <label for="">Nombre Usuario</label>
     <input type="text" name="nombre" id="nombre">
     <label for="">Apellido Usuario</label>
@@ -18,5 +22,6 @@
     <input type="tel" name="telefono" id="telefono">
     <label for="">Contraseña</label>
     <input type="password" name="contrasena" id="contrasena">
+    </form>
 </body>
 </html>
